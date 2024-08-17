@@ -9,9 +9,9 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="我是来灌水的.jpg。">
+<meta name="description" content="我是来水贴的.jpg。">
 <meta property="og:title" content="[摸鱼大楼] 灌水专用帖 ">
-<meta property="og:description" content="我是来灌水的.jpg。">
+<meta property="og:description" content="我是来水贴的.jpg。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://PCL-Community.github.io/Forum/post/%5B-mo-yu-da-lou-%5D%20-guan-shui-zhuan-yong-tie-%20.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/165488354?s=400&u=e0288dd07d496709cdbfc93593d3b79afb9eaf11&v=4">
@@ -70,7 +70,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>我是来灌水的.jpg</p></div>
+<div class="markdown-body" id="postBody"><p>我是来水贴的.jpg</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
@@ -127,7 +127,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
